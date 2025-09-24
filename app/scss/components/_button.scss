@@ -1,0 +1,29 @@
+.header__button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--button1-bg-color);
+    color: var(--button-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container__main-titleBtn-btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+    font-size: 1rem;
+    font-weight: 400;
+
+    &:hover {
+        background-color: var(--button-hover-bg-color);
+    }
+}
