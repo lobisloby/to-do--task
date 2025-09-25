@@ -1,6 +1,6 @@
 .header__textarea {
     width: 90%;
-    height: 2rem;
+    height: 3rem;
     padding: 0.5rem;
     border: none;
     border-radius: 0.5rem;
@@ -20,5 +20,29 @@
 
     &:focus {
         outline: none;
+    }
+}
+
+
+
+.container__main-list-item-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    &:checked+label {
+        text-decoration: line-through;
+        color: var(--text-color3);
+        opacity: 0.8;
     }
 }

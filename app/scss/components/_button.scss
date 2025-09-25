@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 .header__button {
     padding: 0.5rem;
     border: none;
@@ -9,6 +11,33 @@
     color: var(--button-color);
     font-size: 1rem;
     font-weight: 400;
+}
+
+// Theme toggle button should invert based on current theme
+#themeToggle {
+    // Base overrides so it doesn't inherit the green add-button color
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+
+    &:hover {
+        filter: brightness(0.95);
+    }
+
+    &:active {
+        filter: brightness(0.9);
+    }
+}
+
+// Light theme: show a dark-looking toggle
+:root[data-theme="light"] #themeToggle {
+    background-color: rgba(20, 20, 20, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+// Dark theme: show a light-looking toggle
+:root[data-theme="dark"] #themeToggle {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
 .container__main-titleBtn-btn {
@@ -23,7 +52,43 @@
     font-size: 1rem;
     font-weight: 400;
 
+    @include breakpoint-down(md) {
+        font-size: 0.5rem;
+    }
+
     &:hover {
         background-color: var(--button-hover-bg-color);
+    }
+
+    &:active {
+        background-color: var(--button-active-bg-color);
+    }
+}
+
+.container__main-list-item-btn {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+    margin-left: auto;
+
+    @include breakpoint-down('medium') {
+        font-size: 0.5rem;
+        height: 2.5rem;
+    }
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    &:hover {
+        background-color: var(--button-hover-bg-color);
+    }
+
+    &:active {
+        background-color: var(--button-active-bg-color);
     }
 }

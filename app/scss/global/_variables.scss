@@ -1,3 +1,4 @@
+/* global variables */
 :root {
     --background1: rgba(2, 0, 36, 1);
     --background2: rgba(9, 9, 121, 1);
@@ -5,6 +6,7 @@
     --background4: rgba(255, 255, 255, 1);
     --text-color: rgba(255, 255, 255, 1);
     --text-color2: rgba(27, 78, 97, 0.5);
+    --text-color3: rgba(0, 0, 0, 0.5);
     --button-color: rgba(255, 255, 255, 1);
     --button-hover-color: rgba(255, 255, 255, 1);
     --button-active-color: rgba(255, 255, 255, .5);
@@ -12,4 +14,57 @@
     --button-hover-bg-color: rgba(213, 60, 60, .8);
     --button1-bg-color: rgb(48, 163, 30);
     --button1-hover-bg-color: rgba(48, 163, 30, .8);
+}
+
+// DARK AND LIGHT MODE
+:root[data-theme="light"] {
+    --background1: rgba(2, 0, 36, 1);
+    --background2: rgba(9, 9, 121, 1);
+    --background3: rgba(0, 212, 255, 1);
+    --background4: rgba(255, 255, 255, 1);
+    --text-color: rgba(255, 255, 255, 1);
+    --text-color2: rgba(27, 78, 97, 0.5);
+    --text-color3: rgba(0, 0, 0, 0.5);
+    --button-color: rgba(255, 255, 255, 1);
+    --button-hover-color: rgba(255, 255, 255, 1);
+    --button-active-color: rgba(255, 255, 255, .5);
+    --button-bg-color: rgb(213, 60, 60);
+    --button-hover-bg-color: rgba(213, 60, 60, .8);
+    --button1-bg-color: rgb(48, 163, 30);
+    --button1-hover-bg-color: rgba(48, 163, 30, .8);
+}
+
+:root[data-theme="dark"] {
+    --background1: rgba(0, 0, 0, 1);
+    /* Deep black */
+    --background2: rgba(15, 15, 60, 1);
+    /* Dark navy */
+    --background3: rgba(0, 150, 180, 1);
+    /* Muted cyan */
+    --background4: rgba(20, 20, 20, 1);
+    /* Dark gray background */
+
+    --text-color: rgba(255, 255, 255, 1);
+    /* White text */
+    --text-color2: rgba(200, 200, 200, 0.6);
+    /* Soft gray text */
+    --text-color3: rgba(255, 255, 255, 0.5);
+    /* Light transparent text */
+
+    --button-color: rgba(255, 255, 255, 1);
+    /* White text on buttons */
+    --button-hover-color: rgba(255, 255, 255, 0.9);
+    /* Slightly dimmer white */
+    --button-active-color: rgba(255, 255, 255, 0.5);
+    /* Transparent white */
+
+    --button-bg-color: rgb(180, 50, 50);
+    /* Darker red */
+    --button-hover-bg-color: rgba(180, 50, 50, 0.8);
+    /* Darker red hover */
+
+    --button1-bg-color: rgb(40, 130, 25);
+    /* Darker green */
+    --button1-hover-bg-color: rgba(40, 130, 25, 0.8);
+    /* Darker green hover */
 }
