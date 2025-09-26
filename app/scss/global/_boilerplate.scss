@@ -13,7 +13,14 @@ html {
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    // change width and height for extasions chrome
+    /* NORMAL WIDTH AND HEIGHT */
+    // height: 100vh;
+
+    width: 400px;
+    /* change width */
+    height: 600px;
+    /* change height */
     background: linear-gradient(288deg, var(--background1) 0%, var(--background2) 50%, var(--background3) 100%);
     display: flex;
     flex-direction: column;
